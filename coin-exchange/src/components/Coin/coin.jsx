@@ -1,42 +1,57 @@
-import React, { Component } from 'react'
+import React from 'react'
 import propTypes from 'prop-types'; 
 import styled from 'styled-components'; 
 
 const Td = styled.td`
-border: 2px solid darkslategray; 
+border: 4px solid darkslategray; 
 width: 30vh;
 `;
 
-export default class coin extends Component {
-    constructor(props) {
-        super(props); 
-        this.handleClick = this.handleClick.bind(this);
+const Button = styled.button`
+    height: 2rem;
+    width: 100%;
+    background-color: #282c34;
+    color: #FF5533;
+    border: none;
+    font-size: 1rem;
+    :active {
+        background: #0053ba;
     }
+    :hover {
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+`;
 
-    handleClick(event) {
+
+export default function coin (props) {
+    const handleClick = (event) => {
            event.preventDefault(); 
-           this.props.handleRefresh(this.props.ticker); 
+           props.handleRefresh(props.id); 
   
         }
 
-    render() {
         return (
             <tr className="coin-row">
-              <Td>{this.props.name}</Td> 
-              <Td>{this.props.ticker}</Td> 
-              <Td>${this.props.price}</Td> 
+              <Td>{props.rank}</Td>
+              <Td>{props.name}</Td> 
+              <Td>{props.ticker}</Td> 
+              <Td>${props.price}</Td> 
+             {props.showBalance ? <Td>{props.balance}</Td> : null }
               <Td>
-                  <form action = "#" method = "POST">
-                   <button onClick={this.handleClick}> Refresh </button>
+                  <form action = "">
+                   <Button onClick={handleClick}> Refresh </Button>
                   </form>
                   </Td>
             </tr>
         );
-    }
+
 }
 
 coin.propTypes = {
     name: propTypes.string.isRequired, 
+    rank: propTypes.number.isRequired, 
     ticker: propTypes.string.isRequired, 
     price: propTypes.number.isRequired
 }
