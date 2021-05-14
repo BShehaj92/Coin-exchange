@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/BShehaj92/Coin-exchange.git/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/BShehaj92/Coin-exchange.git/static/js/main.7b8ba0d8.chunk.js",
+    "main.js.map": "/BShehaj92/Coin-exchange.git/static/js/main.7b8ba0d8.chunk.js.map",
+    "runtime-main.js": "/BShehaj92/Coin-exchange.git/static/js/runtime-main.0efbb19c.js",
+    "runtime-main.js.map": "/BShehaj92/Coin-exchange.git/static/js/runtime-main.0efbb19c.js.map",
+    "static/js/2.559ef5d0.chunk.js": "/BShehaj92/Coin-exchange.git/static/js/2.559ef5d0.chunk.js",
+    "static/js/2.559ef5d0.chunk.js.map": "/BShehaj92/Coin-exchange.git/static/js/2.559ef5d0.chunk.js.map",
+    "static/js/3.43771244.chunk.js": "/BShehaj92/Coin-exchange.git/static/js/3.43771244.chunk.js",
+    "static/js/3.43771244.chunk.js.map": "/BShehaj92/Coin-exchange.git/static/js/3.43771244.chunk.js.map",
+    "index.html": "/BShehaj92/Coin-exchange.git/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/BShehaj92/Coin-exchange.git/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.559ef5d0.chunk.js.LICENSE.txt": "/BShehaj92/Coin-exchange.git/static/js/2.559ef5d0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0efbb19c.js",
+    "static/js/2.559ef5d0.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.7b8ba0d8.chunk.js"
+  ]
+}
